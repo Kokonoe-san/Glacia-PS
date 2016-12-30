@@ -22,6 +22,9 @@ exports.potd = '';
 //   crash, so this option is provided
 exports.crashguard = true;
 
+exports.serverid = 'glacia';
+exports.servertoken = '7Pt8vi//NNzZ';
+
 // login server data - don't forget the http:// and the trailing slash
 //   This is the URL of the user database and ladder mentioned earlier.
 //   Don't change this setting - there aren't any other login servers right now
