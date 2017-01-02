@@ -2837,7 +2837,7 @@ exports.commands = {
 		connection.sendTo(room, "updating...");
 
 		let exec = require('child_process').exec;
-		exec(`git pull -f`, (error, stdout, stderr) => {
+		exec(`git stash && git pull -f`, (error, stdout, stderr) => {
 			for (let s of ("" + stdout + stderr).split("\n")) {
 				connection.sendTo(room, s);
 				logQueue.push(s);
