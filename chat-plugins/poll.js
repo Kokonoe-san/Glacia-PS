@@ -211,8 +211,8 @@ exports.commands = {
 			if (params.some(parameter => !parameter)) return;
 
 			const options = params.splice(1);
-			if (options.length > 8) {
-				return this.errorReply("Too many options for poll (maximum is 8).");
+			if (options.length > 15) {
+				return this.errorReply("Too many options for poll (maximum is 15).");
 			}
 
 			room.poll = new Poll(room, {source: params[0], supportHTML: supportHTML}, options);
